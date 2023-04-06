@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM nvcr.io/ea-bignlp/bignlp-training:23.03-py3
+FROM nvcr.io/nvidian/bignlp-ci:train.pipe.7806218
 
 ARG EFA_INSTALLER_VERSION=latest
 ARG AWS_OFI_NCCL_VERSION=1.4.0-aws
@@ -61,3 +61,4 @@ ENV RDMAV_FORK_SAFE=1             \
     FI_EFA_USE_DEVICE_RDMA=1
 
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
+
