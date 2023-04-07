@@ -13,6 +13,9 @@
 # limitations under the License.
 
 FROM nvcr.io/nvidian/bignlp-ci:train.pipe.7806218
+#FROM nvcr.io/ea-bignlp/bignlp-training:23.03-py3
+#FROM nvcr.io/ea-bignlp/bignlp-training:23.01-py3
+
 
 ARG EFA_INSTALLER_VERSION=latest
 ARG AWS_OFI_NCCL_VERSION=1.4.0-aws
