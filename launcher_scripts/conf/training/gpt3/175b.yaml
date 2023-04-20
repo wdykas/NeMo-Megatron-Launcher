@@ -164,5 +164,5 @@ model:
     index_mapping_dir: null # path to save index mapping .npy files, by default will save in the same location as data_prefix
     data_prefix: # Should be weight path weight path... for a blended dataset
       - 1.0
-      - /fsx/gpt_dataset/ Wikipedia_en_ftfy_id_shuf_text_document
+      - /fsx/gpt_dataset/Wikipedia_en_ftfy_id_shuf_text_document
 
