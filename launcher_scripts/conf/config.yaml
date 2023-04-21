@@ -27,13 +27,13 @@ launcher_scripts_path: /home/ubuntu/NeMo-Megatron-Launcher/launcher_scripts  # P
 data_dir: /fsx/gpt_dataset  # Location to store and read the data.
 base_results_dir: ${launcher_scripts_path}/results  # Location to store the results, checkpoints and logs.
 container_mounts: # List of additional paths to mount to container. They will be mounted to same path.
-  - null
+  - /home/ubuntu/NeMo-Megatron-Launcher/csp_tools/aws/:/nccl
 container: /fsx/bignlp.sqsh 
 
 wandb_api_key_file: null  # File where the w&B api key is stored. Key must be on the first line.
 
 env_vars:
-  NCCL_TOPO_FILE: null # Should be a path to an XML file describing the topology
+  NCCL_TOPO_FILE: /nccl/topo.xml # Should be a path to an XML file describing the topology
   UCX_IB_PCI_RELAXED_ORDERING: null # Needed to improve Azure performance
   NCCL_IB_PCI_RELAXED_ORDERING: null # Needed to improve Azure performance
   NCCL_IB_TIMEOUT: null # InfiniBand Verbs Timeout. Set to 22 for Azure

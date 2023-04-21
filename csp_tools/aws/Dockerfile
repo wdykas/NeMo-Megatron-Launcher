@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM nvcr.io/nvidian/bignlp-ci:train.pipe.7806218
-#FROM nvcr.io/ea-bignlp/bignlp-training:23.03-py3
+#FROM nvcr.io/nvidian/bignlp-ci:train.pipe.7806218
+FROM nvcr.io/ea-bignlp/bignlp-training:23.03-py3
 #FROM nvcr.io/ea-bignlp/bignlp-training:23.01-py3
 
 
